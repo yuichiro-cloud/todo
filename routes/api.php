@@ -18,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('tasks', 'TaskController@index');
-Route::get('task/{id}', 'TaskController@show');
-Route::post('task', 'TaskController@store');
-Route::put('task/{id}', 'TaskController@update');
-Route::delete('task/{id}', 'TaskController@delete');
+Route::get('tasks', 'TasksController@index');
+Route::get('task/{id}', 'TasksController@show');
+Route::post('task', 'TasksController@store');
+Route::put('task/{id}', 'TasksController@update');
+Route::delete('task/{id}', 'TasksController@delete');
 
