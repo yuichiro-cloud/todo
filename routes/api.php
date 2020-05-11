@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,4 +24,8 @@ Route::get('task/{id}', 'TasksController@show');
 Route::post('task', 'TasksController@store');
 Route::put('task/{id}', 'TasksController@update');
 Route::delete('task/{id}', 'TasksController@delete');
+
+// Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
