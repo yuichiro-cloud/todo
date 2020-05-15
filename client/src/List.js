@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { getList, addItem, deleteItem, updateItem } from './ListFunctions'
+import {RegisterPage, register } from './UserFunction'
 
 class List extends Component {
     constructor() {
@@ -91,6 +92,7 @@ class List extends Component {
     render() {
         return (
             <div className="col-md-12">
+            <button onClick={() => this.RegisterPage}>Login</button>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label htmlFor="title">Title</label>

@@ -17,7 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/{params}', 'TestController@get');
+// Route::get('/{params}', 'TestController@get');
+// Auth::routes();
 
 
 
